@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.main{
+    width: 100%;
+    background:url('./food/bg.png');
+    background-repeat: no-repeat;
+    background-size:cover ;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+.heading{
+    width: 100%;
+    height: 4rem;
+    background: #252525;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    padding-left: 4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.heading i{
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: .8rem;
+    margin-right: 4rem;
+}
+.food-sec,.shake-sec{
+    width: 65%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+}
+.foods,.shaks{
+    width: 17rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    color:white;
+    position: relative;
+    /* background-color: #f0f0f0; */
+    box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.75);
+}
+.foods:hover,.shaks:hover{
+    box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.75);
+    background: #f0f0f0;
+    color: #252525;
+    
+}
+.foods:hover > img ,.shaks:hover > img{
+    margin-top: -2rem;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    transition: all .35s ease-in-out;
+}
+.foods h2,.shaks h2{
+    font-size: 25px;
+    font-weight: 600;
+    
+    margin-top: .7rem;
+}
+.foods img,.shaks img{
+    width: 16rem;
+    height: 11rem;
+    border-radius: 7px;
+    margin-top: 1rem;
+}
+.foods p,.shaks p{
+    font-size: 18px;
+    font-weight: 500;
+    margin: .6rem 0;
+    text-align: center;
+}
+.foods button,.shaks button{
+    width: 50%;
+    padding: .3rem;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    margin: .7rem 0;
+    border: 1px solid white;
+    font-size: 15px;
+}
+.foods button:hover,.shaks button:hover{
+    background: #ffffff;
+    color: green;
+    border: 1px solid green;
+}
+.price{
+    font-weight: bold;
+    padding: .2rem .4rem;
+    border-radius: 10px;
+    background: rgb(255, 216, 20);
+    color: black;
+    position: absolute;
+    margin-top: 1.5rem;
+    margin-left: 11.3rem;
+}
+
+.foods:hover > .price ,.shaks:hover > .price{
+    margin-top: 9rem;
+    margin-left: .3rem;
+}
+.foods:hover > button ,.shaks:hover > button{
+    border: 1.5px solid #252525;
+    color: #252525;
+}
+.icons{
+    width: 80%;
+    display: none;
+    justify-content: space-around;
+}
+.foods:hover > .icons,.shaks:hover >.icons{
+    display: flex;
+}
